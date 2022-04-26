@@ -1,0 +1,32 @@
+#include<stdio.h>
+void main()
+{
+int ch;
+printf("enter your choise from 1-5");
+scanf("%d",&ch);
+if(ch==1)
+{
+printf("food item- pizza");
+printf("price-239");
+}
+else if(ch==2)
+{
+printf("food item- burger");
+printf("price-129");
+}
+else if(ch==3)
+{
+printf("food item- pasta");
+printf("price-179");
+}
+else if(ch==4)
+{
+printf("food item- french fries");
+printf("price-99");
+}
+else
+{
+printf("food item- sandwich");
+printf("price-149");
+}
+}

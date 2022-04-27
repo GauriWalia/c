@@ -1,0 +1,27 @@
+#include<stdio.h>
+int lcmsolve(int x,int y)
+int main()
+{
+int no1,no2,lcm;
+printf("enter the numbers"0
+scanf("%d%d",&no1,&no2);
+if(no1>no2)
+lcm=lcmsolve(no2,no1);
+else
+lcm=lcmsolve(no1,no2);
+printf("%d%d%d",no1,no2,lcm);
+return 0;
+}
+int lcmsolve(int x,int y)
+{
+static int p=0;
+p+=y;
+if((p%x==0)&&(p%y==0))
+{
+return p;
+}
+else
+{
+lcmsolve(x,y);
+}
+}
